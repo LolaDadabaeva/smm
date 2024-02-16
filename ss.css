@@ -199,6 +199,7 @@ button:active {
 }
 @media only screen and (min-width:200px) and (max-width:765px) {
     button {
+        border: 1.4px solid;
         font-size: 15px;
         padding: 10px 0px
     }
