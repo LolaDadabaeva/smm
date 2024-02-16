@@ -1,0 +1,291 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    user-select: none
+}
+body {
+    font-size: clamp(16px, 1.6vw, 20px);
+    margin: 0;
+    background-color: black
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5vh
+}
+a:hover {
+    color: #cf0202;
+    transition: all 1s
+}
+button {
+    border: .1vw solid;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 60px;
+    font-size: 1.3vw;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    transition: color .5s
+}
+button:hover {
+    color: #cf0202
+}
+button:active {
+    color: #cf0202;
+    transition: none
+}
+.header {
+    background-color: black;
+    padding: 1vw 3vw
+}
+.about__profession {
+    display: flex;
+    margin-right: 5%;
+    font-size: clamp(2vw, 3vh, 3.5vw);
+    font-weight: 200;
+    text-align: end;
+    align-items: center;
+    margin-bottom: 90px
+}
+.hero__name {
+    text-transform: uppercase;
+    text-align: end;
+    font-size: clamp(3vw, 4.5vh, 6vw);
+    transition: color .5s
+}
+.hero__name:hover {
+    color: #cf0202
+}
+.main {
+    background-image: url(images/IMG_4422.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vw;
+    display: flex;
+    align-items: end;
+    justify-content: center
+}
+.hero__name-black {
+    text-transform: uppercase;
+    color: white;
+    font-size: clamp(4vw, 6vh, 8vw);
+    font-weight: 700;
+    text-align: start
+}
+.swiper-pagination-bullet:active {
+    color: #cf0202
+}
+.about__me__div::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vw;
+    background-image: url(images/IMG_4423.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1
+}
+.about_me__div-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+.about__me__title {
+    font-weight: 700;
+    padding-top: 2vw;
+    padding-left: 3vw;
+    color: #cf0202;
+    font-size: clamp(4vw, 6vh, 8vw);
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    transition: all 1s
+}
+.about__me__title:hover {
+    color: white
+}
+.about_me__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 560px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5%;
+    gap: 2vw
+}
+.last {
+    padding-top: 3vw;
+    margin-bottom: 30px
+}
+.black-line__block {
+    position: relative;
+    font-size: 15px;
+    background-color: black;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    z-index: 2
+}
+.top {
+    transform: rotate(-4deg);
+    background-color: rgba(157, 146, 146, .6)
+}
+.works__container {
+    text-align: center;
+    font-weight: 700;
+    color: white
+}
+.dropdown-container {
+    padding: 20vh 0
+}
+.dropdown-button {
+    margin: 15px
+}
+.works__title {
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10vw;
+    border: .3px solid;
+    padding: 25px;
+    transition: color 1s
+}
+.slider img {
+    width: 100%
+}
+.slider-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out
+}
+.slider-wrapper.open {
+    max-height: 100vh
+}
+.footer {
+    background-color: black;
+    padding: 3vw
+}
+.footer-text {
+    margin-top: 0;
+    text-align: end;
+    font-size: clamp(3vw, 4.5vh, 6vw);
+    transition: color 1s
+}
+.footer-text:hover {
+    color: #cf0202
+}
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: clamp(15px, 1.6vw, 18px);
+    align-items: center
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px
+}
+@media only screen and (min-width:200px) and (max-width:765px) {
+    button {
+        font-size: 15px;
+        padding: 10px 0px
+    }
+    .about_me__text-wrapper {
+        font-size: 15px;
+        max-width: 300px
+    }
+    .about__me__div::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1
+    }
+
+    .black-line__block {
+        font-size: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: -2px;
+        padding: 2px
+    }
+
+    .main {
+        height: 66vh
+    }
+
+    .about__profession {
+        margin-bottom: 50px
+    }
+
+    .about_me__text-wrapper {
+        gap: 5px
+    }
+
+    .works__title {
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px;
+        margin-top: 115px;
+        font-size: 6vw;
+        margin-bottom: 10px
+    }
+    .dropdown-button {
+        padding: 10px 40px
+    }
+
+    .dropdown-container {
+        padding: 50px 0
+    }
+
+    .footer {
+        padding-right: 20px;
+        padding-top: 5px
+    }
+
+    .icon {
+        width: 25px
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .black-line__block {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: -2px;
+        padding: 5px
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1279px) {
+    .black-line__block {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: -2px;
+        padding: 5px
+    }
+}
+@media only screen and (min-width:1280px) and (max-width:3000px) {
+    .black-line__block {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: -2px;
+        padding: 5px
+    }
+}
