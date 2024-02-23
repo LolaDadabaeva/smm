@@ -65,7 +65,7 @@ circles.forEach(function (circle, index) {
   circle.style.backgroundColor = "white";
 });
 
-window.addEventListener("mousemove", function (e) {
+window.addEventListener("touchmove", function (e) {
   coords.x = e.clientX;
   coords.y = e.clientY;
 });
