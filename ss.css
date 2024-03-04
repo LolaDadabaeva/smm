@@ -197,7 +197,7 @@ button:active {
     height: 30px;
     margin-right: 10px
 }
-@media only screen and (min-width:200px) and (max-width:765px) {
+@media only screen and (min-width:320px) and (max-width:765px) {
     button {
         border: 1.4px solid;
         font-size: 15px;
